@@ -19,6 +19,7 @@ public class PracticeMain {
         System.out.println(area.calculateArea(length,width));
 
 
+        //Protected
         //Protected Access Modifier from different package can not be access without having inheritance
         ProtectedClass pro=new ProtectedClass();
 
@@ -26,9 +27,22 @@ public class PracticeMain {
         ProtectedAccessModifier protect=new ProtectedAccessModifier();
         protect.display();
 
+
+
+        //Private
         //Display function is not access-able as it is private
         PrivateAccessModifier pri=new PrivateAccessModifier();
 
+
+
+        //Default
+        //Access-able with in package
+        DefaultAccessModifier defMod=new DefaultAccessModifier();
+        defMod.displayDefaultAccessModifier();
+
+        //Not access-able in other package
+        ProtectedAccessModifier Def1=new ProtectedAccessModifier();
+        //Def1.displayDefaultAccessModifier();
 
     }
 }
